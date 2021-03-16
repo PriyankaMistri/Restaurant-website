@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+#homepage_slider video { 
+    min-height: 100% !important;
+    min-width: 100% !important;
+	position:fixed;
+	right:0;
+	bottom:0;
+	overflow: hidden;
+}  
+</style>
+</head>
+<body>
+
+         
+<div id="homepage_slider">
+
+				<video title="1" id="bgvid" autoplay loop muted poster="food.mp4">
+				<source src="food.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+			</div>
+	<script>
+	!function ($) {
+    $(function(){
+      $('#homepage_slider').carousel()
+    })
+  };
+</script>
+</body>
+</html>

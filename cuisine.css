@@ -1,0 +1,15 @@
+<html>
+<head>
+<style>
+#homepage_slider video { 
+	position:absolute;
+	width:auto;
+	height:100vh;
+	left:0;
+	bottom:0;
+	z-index:-1;
+	
+} 
+</style>
+<head>
+</html>

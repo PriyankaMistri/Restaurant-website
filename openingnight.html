@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+.menu
+{
+	background-color:black;
+	background:url(IMG_5936.jpg);
+	width:100%;
+	height:100px;
+	top:0;
+	position:fixed;
+	opacity:0.7;
+}
+.main
+{
+	width:100%;
+	height:auto;
+	background:url(IMG_5936.jpg);
+	padding-top:50px;
+	background-color:#181818;
+	text-align:center;
+	font-size:50px;
+	font-family:arial;
+	font-weight:bold;
+	color:#eae0c8;
+}	
+ul{
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   overflow:hidden;
+   background-color:#181818;
+   }
+ .pull-left { float: left; }
+.pull-right { float: right; }
+.pull-left li, .pull-right li { display: inline-block; }
+li a,.dropbtn{
+display:inline-block;
+color:#eae0c8;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+}
+li a:hover,.dropdown:hover{
+background-color:brown;
+}
+.dropdown-content
+{
+display:none;
+position:absolute;
+background-color:maroon;
+min-width:160px;
+box-shadow:5px 5px silver;
+z-index:1;
+}
+.dropdown-content a{
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+text-align:left;
+}
+.dropdown-content a:hover{background-color:gray;}
+.dropdown:hover .dropdown-content{
+display:block;
+}
+</style>
+</head>
+<body>
+<div class="menu">
+</div>
+<div class="main"> THE NEW VIEW HOTEL 
+</div>
+<ul>
+<div class="pull-left">
+<li class="dropdown">
+
+<a href="hotelsite.php" class="dropbtn">THE HOTEL</a>
+<div class="dropdown-content">
+<a href="#visionandmission">Vision and Mission</a>
+<a href="#speciality">Speciality</a>
+<a href="#location">Location</a>
+</div>
+</li>
+<li><a href="reservation.php">RESERVATION</a></li>
+<li class="dropdown">
+<a href= "" class="dropbtn">CUISINE</a>
+<div class="dropdown-content">
+<a href="#">Indian</a>
+<a href="#">Italian</a>
+<a href="#">Continental</a>
+</div>
+</li>
+<li><a href="dining.html">DINING</a></li>
+</div>
+<div class="pull-right">
+<li><a href="events.html">EVENTS</a></li>
+<li><a href="gallery1.html">GALLERY</a></li>
+<li><a href="off.html">OFFERS</a></li>
+<li><a href="feedback.html">FEEDBACK</a></li>
+</div>
+</ul>
+</body>
+</html>

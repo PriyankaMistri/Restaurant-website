@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+#cf {
+  position:relative;
+  height:400px;
+  width:1500px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition:opacity 1s ease-in-out;
+  -moz-transition:opacity 1s ease-in-out;
+  -o-transition:opacity 1s ease-in-out;
+  transition:opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+</style>
+</head>
+<body>
+<div id="cf">
+  <img class="bottom" src="slide212.jpg" />
+  <img class="top" src="slide11.jpg" />
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+#parallax-container {
+   display: block;
+   height: 750px; // This height can be adjusted here and below
+}
+
+#parallax-container div {
+   position: fixed;
+   top: 0;
+   background-position: center !important;
+   transform: translateY(0px);
+   height: 750px; // Keep this the same height as above
+   width: 100%;
+}
+
+#content {
+   position: relative;
+}
+</style>
+</head>
+<body>
+<div id="parallax-container">
+   <div style="background: url([first-layer-image-url]);"></div>
+   <div style="background: url([second-layer-image-url]);"></div>
+   <div style="background: url([third-layer-image-url]);"></div>
+   <!-- Continue to add any other layer images -->
+</div>
+
+<div id="content">
+   <!-- Add your content here -->
+</div>
+
+
+window.addEventListener('scroll', () => {
+   let parent = document.getElementById('parallax-container');
+   let children = parent.getElementsByTagName('div');
+   for(let i = 0; i < children.length; i++) {
+     children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+   }
+}, false)
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head><link rel="stylesheet" href="csslink.css">
+</head>
+<link rel="stylesheet" href="gallery1.css">
+<style>
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<body>
+<div class="menu">
+</div>
+<div class="main"> THE NEW VIEW HOTEL 
+</div>
+<ul>
+<div class="pull-left">
+<li class="dropdown">
+
+<a href="hotelsite.php" class="dropbtn">THE HOTEL</a>
+<div class="dropdown-content">
+<a href="#visionandmission">Vision and Mission</a>
+<a href="#speciality">Speciality</a>
+<a href="#location">Location</a>
+</div>
+</li>
+<li><a href="reservation.php">RESERVATION</a></li>
+<li class="dropdown">
+<a href= "" class="dropbtn">CUISINE</a>
+<div class="dropdown-content">
+<a href="#">Indian</a>
+<a href="#">Italian</a>
+<a href="#">Continental</a>
+</div>
+</li>
+<li><a href="dining.html">DINING</a></li>
+</div>
+<div class="pull-right">
+<li><a href="events.html">EVENTS</a></li>
+<li><a href="gallery1.html">GALLERY</a></li>
+<li><a href="off.html">OFFERS</a></li>
+<li><a href="feedback.html">FEEDBACK</a></li>
+</div>
+</ul>
+<!-- Trigger the Modal -->
+<img class="myImg" src="slide212.jpg" alt="food to go" width="360" height="400">
+<img class="myImg" src="slide11.jpg" alt="South Indian" width="630" height="400">
+<img class="myImg" src="slide51.jpg" alt="Roast Chicken" width="480" height="400">
+<img class="myImg" src="chocolate-close-up-food-2424.jpg" alt="Sunday Speciality" width="460" height="600">
+
+<img class="myImg" src="slide21.jpg" alt="Panner Tikka" width="460" height="400">
+<img class="myImg" src="bowl-bread-close-up-2474661.jpg" alt="Tandoori Combo" width="550" height="300">
+<img class="myImg" src="baked-baking-breakfast-2491288.jpg" alt="Choco Nut Pastry" width="550" height="400">
+<img class="myImg" id="top" src="bowl-cherries-chicken-936611.jpg" alt="Fruit and chicken Bowl" width="460" height="350" >
+<img class="myImg" id="top1" src="baking-cheese-crust-315755.jpg" alt="Trolltunga, Norway" width="460" height="400">
+<img class="myImg" id="top2" src="berry-cupcake-dair.jpg" alt="Trolltunga, Norway" width="457" height="300">
+<img class="myImg" id="top3" src="beef-bread-.jpg" alt="Three Layer Burger" width="550" height="400">
+<img class="myImg" id="top4"src="antioxidant-b.jpg" alt="Trolltunga, Norway" width="450" height="600">
+<img class="myImg" id="top6" src="antioxidant-beverage-bottle-1586529.jpg" alt="Virgin Mojito" width="450" height="600">
+<img class="myImg" id="top7" src="cuisine-delicious-dinner-958545.jpg" alt="Nawabi Special" width="550" height="400">
+<img class="myImg" id="top5" src="appetizer-delicious-dinner-1639556.jpg" alt="Trolltunga, Norway" width="450" height="400">
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<script>
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>
